@@ -99,7 +99,7 @@ module.exports = {
           cwd: process.cwd()
         }),
         new HtmlWebpackPlugin({
-          template: "./src/index.html"
+          template: "./public/index.html"
         })
       ]
     : [
@@ -121,7 +121,7 @@ module.exports = {
         }),
         new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
         new HtmlWebpackPlugin({
-          template: "./src/index.html"
+          template: "./public/index.html"
           // minify: {
           //   collapseWhitespace: true,
           //   removeAttributeQuotes: false
